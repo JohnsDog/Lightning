@@ -1,6 +1,6 @@
-int startx = 300;
+int startx = 350;
 int starty = 0;
-int endx = 300;
+int endx = 350;
 int endy = 0;
 void setup()
 {
@@ -16,7 +16,7 @@ void draw()
  line(startx, starty, endx, endy);
  startx = endx;
  starty = endy;
- endx = startx + (int) (Math.random() * 15) - 15;
+ endx = startx + (int) (Math.random() * 85) - 45;
  endy = starty + (int) (Math.random() * 30);
 }
 void mousePressed()
@@ -26,4 +26,3 @@ void mousePressed()
  endx = 250;
  endy = 0;
 }
-
